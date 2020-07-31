@@ -4,9 +4,9 @@ def find_item_by_name_in_collection(name, collection) # WINE, [{:item=>"DOG FOOD
   answer = Array.new
   collection.each_with_index do |element, index| # =representative of the item hash
     if element.include? name
-
+      array << collection[index]
+    end
     binding.pry
-      end
     end
   end
 
