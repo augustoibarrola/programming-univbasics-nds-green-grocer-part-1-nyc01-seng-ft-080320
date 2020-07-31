@@ -7,10 +7,7 @@ def find_item_by_name_in_collection(name, collection) # WINE, [{:item=>"DOG FOOD
     binding.pry
       end
     end
-
   end
-  answer
-end
 
 
 def consolidate_cart(cart)
