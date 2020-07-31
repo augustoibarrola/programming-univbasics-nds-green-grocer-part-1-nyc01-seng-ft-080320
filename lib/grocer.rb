@@ -1,10 +1,10 @@
 require 'pry'
 
-def find_item_by_name_in_collection(name, collection)
+def find_item_by_name_in_collection(name, collection) # WINE, [{:item=>"DOG FOOD"}, {:item=>"WINE"}, {:item=>"STRYCHNINE"}]
   collection.each do |element| # =representative of the item hash
-    element.each do |key, value| # =inside the hash itself
-      if value == name
-        puts element
+    element.each_with_index do |hash, index| # =inside the hash itself
+      if hash.value.include? name
+        collection[index]
       end
       binding.pry
     end
