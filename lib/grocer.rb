@@ -1,7 +1,7 @@
 require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
-  name.each_with_index do |element, index| # = representative of the item hash
+  collection.each_with_index do |element, index| # = representative of the item hash
     if element.values.include? name
       collection[index]
     end
