@@ -2,8 +2,9 @@ require 'pry'
 
 def find_item_by_name_in_collection(name, collection) # WINE, [{:item=>"DOG FOOD"}, {:item=>"WINE"}, {:item=>"STRYCHNINE"}]
   answer = Array.new
-  collection.each do |element| # =representative of the item hash
-    element.each_with_index do |hash, index| # =inside the hash itself
+  collection.each_with_index do |element| # =representative of the item hash
+    if element.include? name
+      
     binding.pry
       end
     end
