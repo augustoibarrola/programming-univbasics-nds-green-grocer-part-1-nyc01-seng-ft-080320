@@ -6,7 +6,7 @@ def find_item_by_name_in_collection(name, collection) # WINE, [{:item=>"DOG FOOD
     if element.include? name
       array << collection[index]
     end
-    binding.pry
+    #binding.pry
     end
   end
 
