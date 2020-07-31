@@ -6,6 +6,8 @@ def find_item_by_name_in_collection(name, collection) # WINE, [{:item=>"DOG FOOD
     element.each_with_index do |hash, index| # =inside the hash itself
       if hash.include? name
         answer << collection[index]
+        binding.pry
+
       end
     end
   binding.pry
