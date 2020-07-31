@@ -1,11 +1,11 @@
 def find_item_by_name_in_collection(name, collection)
   name.each_with_index do |element, index| # = representative of the item hash
-    if element.values.include? name 
+    if element.values.include? name
       collection[index]
     end
   end
 end
-    
+
 
 end
 
@@ -16,6 +16,3 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
 
 end
-
-
-  
